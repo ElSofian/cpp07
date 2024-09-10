@@ -1,5 +1,4 @@
 # include "./iter.hpp"
-
 # include <iostream>
 # include <cctype>
 
@@ -12,6 +11,7 @@ void ft_toupper(char &arr)
 {
 	arr = std::toupper(static_cast<unsigned char>(arr));
 }
+
 template <typename T>
 void increment(T &arr)
 {
@@ -19,6 +19,7 @@ void increment(T &arr)
 }
 
 int	main(void) {
+
 	char strArr[] = {'A', 'B', 'C'};
 
 	std::cout << "Original:" <<
@@ -44,7 +45,12 @@ int	main(void) {
 	std::endl << std::endl;
 
 
-	int intArr[] = { 3, 2, 1 };
+
+	// Int part
+
+	std::cout << "\n-------------------\nInt:\n\n" << std::endl;
+
+	int intArr[] = {3, 2, 1};
 
 	std::cout << "Original:" <<
 	"\n\tintArr[0]: " << intArr[0] <<
