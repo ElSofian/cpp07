@@ -8,7 +8,7 @@ RM			= rm -rf
 
 OBJS_DIR	= bin
  
-SRCS		= Array.cpp main.cpp
+SRCS		= main.cpp
 OBJS		= $(patsubst %.cpp, $(OBJS_DIR)/%.o, $(SRCS))
 
 # **************************************************************************** #
